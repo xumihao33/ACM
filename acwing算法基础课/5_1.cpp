@@ -55,12 +55,36 @@ int n;
     merge_sort(q,0,n-1);
     for(int i=0;i<n;i++)printf("%d ",q[i]);
 }
+bool check(int mid)
+{
+
+}
+//区间[l,r]被划分为[l,mid-1]和[mid,r]
+void bsearch_1(int l,int r)
+{
+    while(l<r)
+    {
+        int mid=l+r+1>>1;
+        if(check(mid))l=mid;
+        else r=mid-1;
+    }
+}
+//区间[l,r]被划分为[l,mid]和[mid+1,r]
+void bsearch_2(int l,int r)
+{
+    while(l<r)
+    {
+        int mid=l+r>>1;
+        if(check(mid))r=mid;
+        else l=mid+1;
+    }
+}
+void  test3()
+{
+
+}
 int main()
 {
-    test2();
-
-    //归并排序
-    //整数二分
-    //浮点数二分
+    test3();
     return 0;
 }
