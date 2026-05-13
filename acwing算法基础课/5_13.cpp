@@ -1,8 +1,10 @@
 //双指针，位运算，离散化，区间合并
+#include<vector>
+#include<algorithm>
 #include <iostream>
 using namespace std;
 vector<int>alls;
-sort(alls.begin(),alls.end());
+sorted(alls.begin(),alls.end());
 alls.erase(unique(alls.begin(),alls.end()),alls.end());
 int find()
 {
