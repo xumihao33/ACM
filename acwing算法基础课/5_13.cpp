@@ -1,4 +1,4 @@
-//双指针，位运算，离散化，区间合并
+
 #include<vector>
 #include<algorithm>
 #include <iostream>

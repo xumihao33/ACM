@@ -30,7 +30,6 @@ void remove(int k)
 }
 int main()
 {
-    //链表 单链表：邻接表（图和树） 双链表：优化某些问题
     void init();
     return 0;
 }
